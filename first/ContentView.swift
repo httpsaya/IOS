@@ -80,4 +80,18 @@ func someCoding(){
     let lifeStory: String = "My name is \(firstName) \(lastName). I'm \(age) years old, born in \(birthYear). I'm currently \(isStudent ? "a student of KBTU at 4th course" : "not a student"). At my free time I like \(hobbies) which is \(isHobbyCreative ? "a creative hobby" : "not a creative hobby"). I have \(numberOfHobbies) hobbies in total and my favorite number is \(favoriteNumber). Besides, I love \(secondHobby) . Aslo, another interesting fact about me is that I live in \(currentCity) since \(yearOfEnrolling)."
     
     print(lifeStory)
+    
+//    Bonus Task:
+//    Add an addi4onal variable for futureGoals (String), and append it to your life story (and any other
+//    interes4ng informa4on related to you 🙂). Also try to use emoji as value of variables and variable names.
+//    • Example: “In the future, I want to become a professional iOS developer.”
+    
+    var futureGoals: String = "I want to be rich."
+    var story: String = "ship my first app on the App Store"
+    var favoriteEmoji: String = "😄"
+     
+    var fullLifeStory: String = lifeStory + " In the future, \(futureGoals) And \(story)" + " that makes me feel \(favoriteEmoji)"
+     
+     
+    print(fullLifeStory)
 }
