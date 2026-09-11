@@ -36,21 +36,48 @@ func someCoding(){
     //    • birthYear: The year you were born (Int).
     //    • isStudent: Whether or not you are currently student (Bool).
     //    • height: Your height in meters (Double).
-        
+    
     //    Add some more details about you.
     //    Bonus Challenge: Create a constant currentYear and calculate your age by subtrac4ng birthYear from
     //    currentYear.
-        
-        var firstName: String = "Zhansaya"
-        var lastName: String = "Umirkulova"
-        let birthYear: Int = 2006
-        var isStudent: Bool = true
-        var height: Double = 165
-        var currentCity: String = "Almaty"
-        
+    
+    var firstName: String = "Zhansaya"
+    var lastName: String = "Umirkulova"
+    let birthYear: Int = 2006
+    var isStudent: Bool = true
+    var height: Double = 165
+    var currentCity: String = "Almaty"
+    
     //    Bonus Task
-        var currentYear: Int = 2026
-        var age: Int = currentYear - birthYear
-        
-        print(age)
+    var currentYear: Int = 2026
+    var age: Int = currentYear - birthYear
+    
+    print(age)
+    
+    //    Step 2: Create Variables for Your Hobbies and Interests
+    //    Declare variables for your hobbies and interests, as example:
+    //    • hobby: Your favorite hobby (String).
+    //    • numberOfHobbies: The total number of hobbies you have (Int).
+    //    • favoriteNumber: Your favorite number (Int).
+    //    • isHobbyCrea&ve: Whether your hobby is crea4ve (Bool).
+    //    Add some more details about you.
+    
+    var hobbies: String = "watching series"
+    var numberOfHobbies: Int = 5
+    var favoriteNumber: Int = 7
+    var isHobbyCreative: Bool = false
+    
+    var secondHobby: String = "hiking"
+    var yearOfEnrolling: Int = 2023
+    
+    
+//    Step 3: Create a Summary of Your Life Story
+//    Use string interpola4on to combine all your variables into one final summary string.
+//    The summary should look something like:
+//    • “My name is John Doe. I am 20 years old, born in 2003. I am currently a student. I enjoy pain>ng, which is
+//    a crea>ve hobby. I have 5 hobbies in total, and my favorite number is 7.”
+    
+    let lifeStory: String = "My name is \(firstName) \(lastName). I'm \(age) years old, born in \(birthYear). I'm currently \(isStudent ? "a student of KBTU at 4th course" : "not a student"). At my free time I like \(hobbies) which is \(isHobbyCreative ? "a creative hobby" : "not a creative hobby"). I have \(numberOfHobbies) hobbies in total and my favorite number is \(favoriteNumber). Besides, I love \(secondHobby) . Aslo, another interesting fact about me is that I live in \(currentCity) since \(yearOfEnrolling)."
+    
+    print(lifeStory)
 }
