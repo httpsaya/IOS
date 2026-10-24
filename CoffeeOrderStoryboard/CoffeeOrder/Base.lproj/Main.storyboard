@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23501" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vc-01-xyz">
+<device id="retina6_12" orientation="portrait" appearance="light"/>
+<dependencies>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23500"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<scene sceneID="scene-01-xyz">
+<objects>
+<viewController id="vc-01-xyz" customClass="ViewController" customModule="CoffeeOrder" customModuleProvider="target" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="root-01-xyz">
+<rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+<viewLayoutGuide key="safeArea" id="safe-01-xyz"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hero-01-xyz">
+<rect key="frame" x="16" y="70" width="361" height="203"/>
+<subviews>
+<imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="CoffeeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="icon-01-xyz">
+<rect key="frame" x="119.5" y="40.5" width="122" height="122"/>
+</imageView>
+</subviews>
+<color key="backgroundColor" red="0.91765" green="0.86275" blue="0.78824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="20"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+<constraints>
+<constraint firstItem="icon-01-xyz" firstAttribute="centerX" secondItem="hero-01-xyz" secondAttribute="centerX" id="A01-B01-C001"/>
+<constraint firstItem="icon-01-xyz" firstAttribute="centerY" secondItem="hero-01-xyz" secondAttribute="centerY" id="A02-B02-C002"/>
+<constraint firstItem="icon-01-xyz" firstAttribute="width" constant="122" id="A03-B03-C003"/>
+<constraint firstItem="icon-01-xyz" firstAttribute="height" constant="122" id="A04-B04-C004"/>
+</constraints>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Flat White" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="title-01-xyz">
+<rect key="frame" x="16" y="293" width="200" height="30"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="25"/>
+<color key="textColor" red="0.12549" green="0.12549" blue="0.12549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="₸1 800" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" translatesAutoresizingMaskIntoConstraints="NO" id="price-01-xyz">
+<rect key="frame" x="280" y="293" width="97" height="28"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="23"/>
+<color key="textColor" red="0.47451" green="0.27843" blue="0.12941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double ristretto with silky steamed milk. Smooth, strong and not too sweet." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="desc-01-xyz">
+<rect key="frame" x="16" y="332" width="361" height="60"/>
+<fontDescription key="fontDescription" type="system" weight="regular" pointSize="16"/>
+<color key="textColor" red="0.45098" green="0.44706" blue="0.46667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIZE" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" translatesAutoresizingMaskIntoConstraints="NO" id="size-01-xyz">
+<rect key="frame" x="16" y="414" width="40" height="17"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="14"/>
+<color key="textColor" red="0.45098" green="0.44706" blue="0.46667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="small-01-xyz">
+<rect key="frame" x="16" y="441" width="107" height="48"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="16"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<state key="normal" title="S · 250 ml">
+<color key="titleColor" red="0.11765" green="0.11765" blue="0.11765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="12"/>
+</userDefinedRuntimeAttribute>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+<real key="value" value="1"/>
+</userDefinedRuntimeAttribute>
+<userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+<color key="value" red="0.8902" green="0.83922" blue="0.77647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</button>
+<button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="medium-01-xyz">
+<rect key="frame" x="133" y="441" width="107" height="48"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="16"/>
+<color key="backgroundColor" red="0.9451" green="0.90588" blue="0.86275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<state key="normal" title="M · 350 ml">
+<color key="titleColor" red="0.38431" green="0.22745" blue="0.12549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="12"/>
+</userDefinedRuntimeAttribute>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+<real key="value" value="2"/>
+</userDefinedRuntimeAttribute>
+<userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+<color key="value" red="0.47451" green="0.27843" blue="0.12941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</button>
+<button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="large-01-xyz">
+<rect key="frame" x="250" y="441" width="127" height="48"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="16"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<state key="normal" title="L · 450 ml">
+<color key="titleColor" red="0.11765" green="0.11765" blue="0.11765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="12"/>
+</userDefinedRuntimeAttribute>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+<real key="value" value="1"/>
+</userDefinedRuntimeAttribute>
+<userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+<color key="value" red="0.8902" green="0.83922" blue="0.77647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</button>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quantity-01-xyz">
+<rect key="frame" x="16" y="513" width="361" height="64"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" translatesAutoresizingMaskIntoConstraints="NO" id="qtylabel-01-xyz">
+<rect key="frame" x="16" y="21.5" width="70" height="21"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="17"/>
+<color key="textColor" red="0.12549" green="0.12549" blue="0.12549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="minus-01-xyz">
+<rect key="frame" x="223" y="10" width="44" height="44"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="24"/>
+<color key="backgroundColor" red="0.94902" green="0.90588" blue="0.8549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<state key="normal" title="−">
+<color key="titleColor" red="0.47451" green="0.27843" blue="0.12941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="12"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</button>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" translatesAutoresizingMaskIntoConstraints="NO" id="number-01-xyz">
+<rect key="frame" x="273" y="21.5" width="32" height="21"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="19"/>
+<color key="textColor" red="0.12549" green="0.12549" blue="0.12549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plus-01-xyz">
+<rect key="frame" x="311" y="10" width="40" height="44"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="24"/>
+<color key="backgroundColor" red="0.94902" green="0.90588" blue="0.8549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<state key="normal" title="+">
+<color key="titleColor" red="0.47451" green="0.27843" blue="0.12941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="12"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</button>
+</subviews>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="16"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+<constraints>
+<constraint firstItem="qtylabel-01-xyz" firstAttribute="leading" secondItem="quantity-01-xyz" secondAttribute="leading" constant="16" id="A05-B05-C005"/>
+<constraint firstItem="qtylabel-01-xyz" firstAttribute="centerY" secondItem="quantity-01-xyz" secondAttribute="centerY" id="A06-B06-C006"/>
+<constraint firstItem="plus-01-xyz" firstAttribute="trailing" secondItem="quantity-01-xyz" secondAttribute="trailing" constant="-10" id="A07-B07-C007"/>
+<constraint firstItem="plus-01-xyz" firstAttribute="centerY" secondItem="quantity-01-xyz" secondAttribute="centerY" id="A08-B08-C008"/>
+<constraint firstItem="plus-01-xyz" firstAttribute="width" constant="44" id="A09-B09-C009"/>
+<constraint firstItem="plus-01-xyz" firstAttribute="height" constant="44" id="A10-B10-C010"/>
+<constraint firstItem="number-01-xyz" firstAttribute="trailing" secondItem="plus-01-xyz" secondAttribute="leading" constant="-6" id="A11-B11-C011"/>
+<constraint firstItem="number-01-xyz" firstAttribute="centerY" secondItem="quantity-01-xyz" secondAttribute="centerY" id="A12-B12-C012"/>
+<constraint firstItem="number-01-xyz" firstAttribute="width" constant="32" id="A13-B13-C013"/>
+<constraint firstItem="minus-01-xyz" firstAttribute="trailing" secondItem="number-01-xyz" secondAttribute="leading" constant="-6" id="A14-B14-C014"/>
+<constraint firstItem="minus-01-xyz" firstAttribute="centerY" secondItem="quantity-01-xyz" secondAttribute="centerY" id="A15-B15-C015"/>
+<constraint firstItem="minus-01-xyz" firstAttribute="width" constant="44" id="A16-B16-C016"/>
+<constraint firstItem="minus-01-xyz" firstAttribute="height" constant="44" id="A17-B17-C017"/>
+<constraint firstItem="qtylabel-01-xyz" firstAttribute="trailing" secondItem="minus-01-xyz" secondAttribute="leading" relation="lessThanOrEqual" constant="-8" id="A18-B18-C018"/>
+</constraints>
+</view>
+<button opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="order-01-xyz">
+<rect key="frame" x="16" y="763" width="361" height="56"/>
+<fontDescription key="fontDescription" type="system" weight="bold" pointSize="18"/>
+<color key="backgroundColor" red="0.47451" green="0.27843" blue="0.12941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<state key="normal" title="Add to order · ₸1 800">
+<color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<userDefinedRuntimeAttributes>
+<userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+<real key="value" value="15"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes>
+</button>
+</subviews>
+<color key="backgroundColor" red="0.98431" green="0.97255" blue="0.95686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="hero-01-xyz" firstAttribute="top" secondItem="safe-01-xyz" secondAttribute="top" constant="12" id="A19-B19-C019"/>
+<constraint firstItem="hero-01-xyz" firstAttribute="leading" secondItem="safe-01-xyz" secondAttribute="leading" constant="16" id="A20-B20-C020"/>
+<constraint firstItem="hero-01-xyz" firstAttribute="trailing" secondItem="safe-01-xyz" secondAttribute="trailing" constant="-16" id="A21-B21-C021"/>
+<constraint firstItem="hero-01-xyz" firstAttribute="width" secondItem="hero-01-xyz" secondAttribute="height" multiplier="16:9" id="A22-B22-C022"/>
+<constraint firstItem="title-01-xyz" firstAttribute="top" secondItem="hero-01-xyz" secondAttribute="bottom" constant="20" id="A23-B23-C023"/>
+<constraint firstItem="title-01-xyz" firstAttribute="leading" secondItem="safe-01-xyz" secondAttribute="leading" constant="16" id="A24-B24-C024"/>
+<constraint firstItem="price-01-xyz" firstAttribute="trailing" secondItem="safe-01-xyz" secondAttribute="trailing" constant="-16" id="A25-B25-C025"/>
+<constraint firstItem="price-01-xyz" firstAttribute="firstBaseline" secondItem="title-01-xyz" secondAttribute="firstBaseline" id="A26-B26-C026"/>
+<constraint firstItem="title-01-xyz" firstAttribute="trailing" secondItem="price-01-xyz" secondAttribute="leading" relation="lessThanOrEqual" constant="-8" id="A27-B27-C027"/>
+<constraint firstItem="desc-01-xyz" firstAttribute="top" secondItem="title-01-xyz" secondAttribute="bottom" constant="9" id="A28-B28-C028"/>
+<constraint firstItem="desc-01-xyz" firstAttribute="leading" secondItem="safe-01-xyz" secondAttribute="leading" constant="16" id="A29-B29-C029"/>
+<constraint firstItem="desc-01-xyz" firstAttribute="trailing" secondItem="safe-01-xyz" secondAttribute="trailing" constant="-16" id="A30-B30-C030"/>
+<constraint firstItem="size-01-xyz" firstAttribute="top" secondItem="desc-01-xyz" secondAttribute="bottom" constant="22" id="A31-B31-C031"/>
+<constraint firstItem="size-01-xyz" firstAttribute="leading" secondItem="safe-01-xyz" secondAttribute="leading" constant="16" id="A32-B32-C032"/>
+<constraint firstItem="small-01-xyz" firstAttribute="top" secondItem="size-01-xyz" secondAttribute="bottom" constant="10" id="A33-B33-C033"/>
+<constraint firstItem="small-01-xyz" firstAttribute="leading" secondItem="safe-01-xyz" secondAttribute="leading" constant="16" id="A34-B34-C034"/>
+<constraint firstItem="small-01-xyz" firstAttribute="height" constant="48" id="A35-B35-C035"/>
+<constraint firstItem="medium-01-xyz" firstAttribute="top" secondItem="small-01-xyz" secondAttribute="top" id="A36-B36-C036"/>
+<constraint firstItem="medium-01-xyz" firstAttribute="leading" secondItem="small-01-xyz" secondAttribute="trailing" constant="10" id="A37-B37-C037"/>
+<constraint firstItem="medium-01-xyz" firstAttribute="width" secondItem="small-01-xyz" secondAttribute="width" id="A38-B38-C038"/>
+<constraint firstItem="medium-01-xyz" firstAttribute="height" secondItem="small-01-xyz" secondAttribute="height" id="A39-B39-C039"/>
+<constraint firstItem="large-01-xyz" firstAttribute="top" secondItem="small-01-xyz" secondAttribute="top" id="A40-B40-C040"/>
+<constraint firstItem="large-01-xyz" firstAttribute="leading" secondItem="medium-01-xyz" secondAttribute="trailing" constant="10" id="A41-B41-C041"/>
+<constraint firstItem="large-01-xyz" firstAttribute="width" secondItem="small-01-xyz" secondAttribute="width" id="A42-B42-C042"/>
+<constraint firstItem="large-01-xyz" firstAttribute="height" secondItem="small-01-xyz" secondAttribute="height" id="A43-B43-C043"/>
+<constraint firstItem="large-01-xyz" firstAttribute="trailing" secondItem="safe-01-xyz" secondAttribute="trailing" constant="-16" id="A44-B44-C044"/>
+<constraint firstItem="quantity-01-xyz" firstAttribute="top" secondItem="small-01-xyz" secondAttribute="bottom" constant="24" id="A45-B45-C045"/>
+<constraint firstItem="quantity-01-xyz" firstAttribute="leading" secondItem="safe-01-xyz" secondAttribute="leading" constant="16" id="A46-B46-C046"/>
+<constraint firstItem="quantity-01-xyz" firstAttribute="trailing" secondItem="safe-01-xyz" secondAttribute="trailing" constant="-16" id="A47-B47-C047"/>
+<constraint firstItem="quantity-01-xyz" firstAttribute="height" constant="64" id="A48-B48-C048"/>
+<constraint firstItem="order-01-xyz" firstAttribute="leading" secondItem="safe-01-xyz" secondAttribute="leading" constant="16" id="A49-B49-C049"/>
+<constraint firstItem="order-01-xyz" firstAttribute="trailing" secondItem="safe-01-xyz" secondAttribute="trailing" constant="-16" id="A50-B50-C050"/>
+<constraint firstItem="order-01-xyz" firstAttribute="bottom" secondItem="safe-01-xyz" secondAttribute="bottom" constant="-16" id="A51-B51-C051"/>
+<constraint firstItem="order-01-xyz" firstAttribute="height" constant="56" id="A52-B52-C052"/>
+<constraint firstItem="quantity-01-xyz" firstAttribute="bottom" secondItem="order-01-xyz" secondAttribute="top" relation="lessThanOrEqual" constant="-8" id="A53-B53-C053"/>
+</constraints>
+</view>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="first-responder" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="100" y="100"/>
+</scene>
+</scenes>
+<resources>
+<image name="CoffeeIcon" width="300" height="300"/>
+</resources>
+</document>
