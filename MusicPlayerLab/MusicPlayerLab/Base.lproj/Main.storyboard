@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VC-001">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="scene-01">
+            <objects>
+                <viewController id="VC-001" customClass="ViewController" customModule="MusicPlayerLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="view-main">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="root-stack">
+                                <rect key="frame" x="20" y="198.66666666666666" width="353" height="504.66666666666674"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cover-wrapper">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="266.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="cover01" translatesAutoresizingMaskIntoConstraints="NO" id="cover-image">
+                                                <rect key="frame" x="43.333333333333343" y="0.0" width="266.33333333333326" height="266.66666666666669"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cover-image" secondAttribute="height" multiplier="1:1" id="cover-ratio"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="cover-image" secondAttribute="bottom" id="cover-bottom"/>
+                                            <constraint firstItem="cover-image" firstAttribute="centerX" secondItem="cover-wrapper" secondAttribute="centerX" id="cover-center-x"/>
+                                            <constraint firstItem="cover-image" firstAttribute="width" relation="lessThanOrEqual" secondItem="cover-wrapper" secondAttribute="width" id="cover-max-width"/>
+                                            <constraint firstItem="cover-image" firstAttribute="top" secondItem="cover-wrapper" secondAttribute="top" id="cover-top"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="labels-stack">
+                                        <rect key="frame" x="0.0" y="282.66666666666663" width="353" height="62.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Morning Drift" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" translatesAutoresizingMaskIntoConstraints="NO" id="title-label">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="33.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <color key="textColor" red="0.10000000000000001" green="0.11" blue="0.17999999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Studio Originals" textAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="artist-label">
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="353" height="21.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="0.42999999999999999" green="0.44" blue="0.51000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="progress-stack">
+                                        <rect key="frame" x="0.0" y="361" width="353" height="55.666666666666686"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="progress-slider">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                                <color key="minimumTrackTintColor" red="0.40000000000000002" green="0.28000000000000003" blue="0.78000000000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="progressChanged:" destination="VC-001" eventType="valueChanged" id="action-progress-changed"/>
+                                                </connections>
+                                            </slider>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="time-stack">
+                                                <rect key="frame" x="0.0" y="40" width="353" height="15.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0:00" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="current-time-label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="15.666666666666666"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="0.42999999999999999" green="0.44" blue="0.51000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0:00" textAlignment="right" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duration-label">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="15.666666666666666"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" red="0.42999999999999999" green="0.44" blue="0.51000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="control-stack">
+                                        <rect key="frame" x="0.0" y="432.66666666666674" width="353" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prev-button">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="72"/>
+                                                <color key="tintColor" red="0.16" green="0.17000000000000001" blue="0.28000000000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="backward.fill" catalog="system"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="previousTapped:" destination="VC-001" eventType="touchUpInside" id="prev-action"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="play-button">
+                                                <rect key="frame" x="123" y="0.0" width="107" height="72"/>
+                                                <color key="tintColor" red="0.40000000000000002" green="0.28000000000000003" blue="0.78000000000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="play.fill" catalog="system"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playPauseTapped:" destination="VC-001" eventType="touchUpInside" id="play-action"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="next-button">
+                                                <rect key="frame" x="246" y="0.0" width="107" height="72"/>
+                                                <color key="tintColor" red="0.16" green="0.17000000000000001" blue="0.28000000000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="forward.fill" catalog="system"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextTapped:" destination="VC-001" eventType="touchUpInside" id="next-action"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="control-height"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="safe-area"/>
+                        <color key="backgroundColor" red="0.98823291063308716" green="0.8442582634326492" blue="0.9333639498185593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cover-image" firstAttribute="height" secondItem="safe-area" secondAttribute="height" multiplier="0.4" id="cover-adaptive-height"/>
+                            <constraint firstItem="safe-area" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="root-stack" secondAttribute="bottom" constant="8" id="root-bottom-min"/>
+                            <constraint firstItem="root-stack" firstAttribute="centerY" secondItem="safe-area" secondAttribute="centerY" id="root-center"/>
+                            <constraint firstItem="root-stack" firstAttribute="leading" secondItem="safe-area" secondAttribute="leading" constant="20" id="root-leading"/>
+                            <constraint firstItem="root-stack" firstAttribute="top" relation="greaterThanOrEqual" secondItem="safe-area" secondAttribute="top" constant="8" id="root-top-min"/>
+                            <constraint firstItem="safe-area" firstAttribute="trailing" secondItem="root-stack" secondAttribute="trailing" constant="20" id="root-trailing"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistLabel" destination="artist-label" id="out-artist"/>
+                        <outlet property="coverImageView" destination="cover-image" id="out-cover"/>
+                        <outlet property="currentTimeLabel" destination="current-time-label" id="out-currentTimeLabel"/>
+                        <outlet property="durationLabel" destination="duration-label" id="out-durationLabel"/>
+                        <outlet property="playPauseButton" destination="play-button" id="out-play"/>
+                        <outlet property="progressSlider" destination="progress-slider" id="out-progressSlider"/>
+                        <outlet property="titleLabel" destination="title-label" id="out-title"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="responder" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="76"/>
+        <image name="cover01" width="600" height="600"/>
+        <image name="forward.fill" catalog="system" width="128" height="76"/>
+        <image name="play.fill" catalog="system" width="120" height="128"/>
+    </resources>
+</document>

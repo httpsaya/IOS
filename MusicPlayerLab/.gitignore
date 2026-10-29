@@ -1,0 +1,10 @@
+# Xcode local state
+.DS_Store
+*.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+*.hmap
+*.ipa
+*.dSYM
+.swiftpm/
