@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1A965901-">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CAFE8962-">
+            <objects>
+                <viewController id="1A965901-" customClass="ViewController" customModule="FavoritesListLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5F91DEC7-">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="128" estimatedRowHeight="128" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EE688D94-">
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.84201333339999995" blue="0.97290609610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavoriteCell" rowHeight="128" id="7F12F3F4-" customClass="FavoriteCell" customModule="FavoritesListLab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7F12F3F4-" id="1CD1E600-">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="5E50A20D-">
+                                                    <rect key="frame" x="16" y="12" width="361" height="104"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="poster01" translatesAutoresizingMaskIntoConstraints="NO" id="1B185AF4-">
+                                                            <rect key="frame" x="0.0" y="2" width="88" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="68EBC50A-"/>
+                                                                <constraint firstAttribute="width" constant="88" id="D632B098-"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="7BD5EFAD-">
+                                                            <rect key="frame" x="102" y="19.333333333333336" width="259" height="65.333333333333314"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="A Favorite Movie" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="0EA1EF0B-">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="259" height="21.666666666666668"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="highlightedColor" red="1" green="0.83000232144778252" blue="0.97424432260936433" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Genre · Short description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO" id="3AF7E1C1-">
+                                                                    <rect key="frame" x="0.0" y="27.666666666666668" width="259" height="15.666666666666668"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                    <color key="textColor" systemColor="systemGray5Color"/>
+                                                                    <color key="highlightedColor" red="0.68132034770000005" green="0.41493172389999999" blue="0.58909032409999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="C9EB5486-">
+                                                                    <rect key="frame" x="0.0" y="49.333333333333343" width="259" height="16"/>
+                                                                    <subviews>
+                                                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BC53D957-">
+                                                                            <rect key="frame" x="0.0" y="-0.33333333333333215" width="18" height="15.666666666666664"/>
+                                                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="18" id="3DBB7DF7-"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="737E1253-"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="613E35AD-">
+                                                                            <rect key="frame" x="21" y="-0.33333333333333215" width="18" height="15.666666666666664"/>
+                                                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="16" id="39574AA6-"/>
+                                                                                <constraint firstAttribute="width" constant="18" id="4B7D32D2-"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6C5D96B1-">
+                                                                            <rect key="frame" x="42" y="-0.33333333333333215" width="18" height="15.666666666666664"/>
+                                                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="16" id="40B716BB-"/>
+                                                                                <constraint firstAttribute="width" constant="18" id="710BD221-"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9C09B5C4-">
+                                                                            <rect key="frame" x="63" y="-0.33333333333333215" width="18" height="15.666666666666664"/>
+                                                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="18" id="3F284037-"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="43EC6D62-"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F0A9AD93-">
+                                                                            <rect key="frame" x="84" y="-0.33333333333333215" width="175" height="15.666666666666664"/>
+                                                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="16" id="44ED8070-"/>
+                                                                                <constraint firstAttribute="width" constant="18" id="DE859C07-"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="5E50A20D-" secondAttribute="bottom" constant="12" id="1804C4A9-"/>
+                                                <constraint firstItem="5E50A20D-" firstAttribute="top" secondItem="1CD1E600-" secondAttribute="top" constant="12" id="5A7E841E-"/>
+                                                <constraint firstAttribute="trailing" secondItem="5E50A20D-" secondAttribute="trailing" constant="16" id="7274FBA8-"/>
+                                                <constraint firstItem="5E50A20D-" firstAttribute="leading" secondItem="1CD1E600-" secondAttribute="leading" constant="16" id="B99743BB-"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="posterImageView" destination="1B185AF4-" id="EC94EAA5-"/>
+                                            <outlet property="star1" destination="BC53D957-" id="5387FC96-"/>
+                                            <outlet property="star2" destination="613E35AD-" id="8B6010E4-"/>
+                                            <outlet property="star3" destination="6C5D96B1-" id="25840F24-"/>
+                                            <outlet property="star4" destination="9C09B5C4-" id="36CA6C0F-"/>
+                                            <outlet property="star5" destination="F0A9AD93-" id="8E879A41-"/>
+                                            <outlet property="subtitleLabel" destination="3AF7E1C1-" id="E918024D-"/>
+                                            <outlet property="titleLabel" destination="0EA1EF0B-" id="22B9F188-"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3A64EB50-"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EE688D94-" firstAttribute="leading" secondItem="3A64EB50-" secondAttribute="leading" id="5C8BC50C-"/>
+                            <constraint firstItem="3A64EB50-" firstAttribute="trailing" secondItem="EE688D94-" secondAttribute="trailing" id="78BBA3AB-"/>
+                            <constraint firstItem="3A64EB50-" firstAttribute="bottom" secondItem="EE688D94-" secondAttribute="bottom" id="AAFBB009-"/>
+                            <constraint firstItem="EE688D94-" firstAttribute="top" secondItem="3A64EB50-" secondAttribute="top" id="FE72B8E1-"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="EE688D94-" id="7B6ABC34-"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35510C69-" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="poster01" width="360" height="420"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
