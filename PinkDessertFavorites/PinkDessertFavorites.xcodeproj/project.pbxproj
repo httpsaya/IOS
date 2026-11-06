@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32165BD30BCA5781B5DFE2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B907410A75CE79C648C88 /* ViewController.swift */; };
+		47BF523C910C5F62A9C5436D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC096EC67AB1525BA35D44CF /* AppDelegate.swift */; };
+		4C23351CA88C50539CC86CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6722E39B8935C29B3CF2CAF /* LaunchScreen.storyboard */; };
+		6581B8520B6A5E92B9CD5C8B /* FavoriteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359682279B8C5985A8CD2B93 /* FavoriteLibrary.swift */; };
+		66FCDC82AFB65244A8B9E065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB9CBBF687F586FA32D7B80 /* Main.storyboard */; };
+		6ADC40C20E69551290A2587A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAEF92748995AB6A1D58207 /* Assets.xcassets */; };
+		7D5921B6019B569E9B71C8E6 /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7AC691944572EA138F94B /* FavoriteItem.swift */; };
+		B22FEA55210D58C7837E11C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35DFB7B0FF055989C2247DE /* SceneDelegate.swift */; };
+		D2F6831AE316568CA936CB32 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D48E511E175C93B5C3221A /* FavoriteCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0756968C675F528C827A96D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B2A1C750EA955629E4740DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		359682279B8C5985A8CD2B93 /* FavoriteLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLibrary.swift; sourceTree = "<group>"; };
+		3C9FCAF614CA5B2FB9748513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541B907410A75CE79C648C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80CAE7E1AD9352129A27A106 /* PinkDessertFavorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkDessertFavorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F7AC691944572EA138F94B /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
+		ADAEF92748995AB6A1D58207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC096EC67AB1525BA35D44CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1D48E511E175C93B5C3221A /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		F35DFB7B0FF055989C2247DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE3CC9617F1553ECBB6BAAB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F7E0F2DE47583FAC345735 = {
+			isa = PBXGroup;
+			children = (
+				BAF32ADA895856A59902A70E /* PinkDessertFavorites */,
+				70DC7CBF219F5BFB8AE7D255 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70DC7CBF219F5BFB8AE7D255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80CAE7E1AD9352129A27A106 /* PinkDessertFavorites.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF32ADA895856A59902A70E /* PinkDessertFavorites */ = {
+			isa = PBXGroup;
+			children = (
+				BC096EC67AB1525BA35D44CF /* AppDelegate.swift */,
+				F35DFB7B0FF055989C2247DE /* SceneDelegate.swift */,
+				541B907410A75CE79C648C88 /* ViewController.swift */,
+				C1D48E511E175C93B5C3221A /* FavoriteCell.swift */,
+				94F7AC691944572EA138F94B /* FavoriteItem.swift */,
+				359682279B8C5985A8CD2B93 /* FavoriteLibrary.swift */,
+				3C9FCAF614CA5B2FB9748513 /* Info.plist */,
+				8AB9CBBF687F586FA32D7B80 /* Main.storyboard */,
+				D6722E39B8935C29B3CF2CAF /* LaunchScreen.storyboard */,
+				ADAEF92748995AB6A1D58207 /* Assets.xcassets */,
+			);
+			path = PinkDessertFavorites;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0039E288AC7F5B67AF8E8781 /* PinkDessertFavorites */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC42B60081055DFBA2DB763 /* Build configuration list for PBXNativeTarget "PinkDessertFavorites" */;
+			buildPhases = (
+				DC213CF8E3025712A5DFE9D8 /* Sources */,
+				AE3CC9617F1553ECBB6BAAB2 /* Frameworks */,
+				6437A4E0947E52B3BDE5BB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinkDessertFavorites;
+			productName = PinkDessertFavorites;
+			productReference = 80CAE7E1AD9352129A27A106 /* PinkDessertFavorites.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1738D2920215B21B2CBCD61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0039E288AC7F5B67AF8E8781 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 83069315831553B8959E9EE3 /* Build configuration list for PBXProject "PinkDessertFavorites" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01F7E0F2DE47583FAC345735;
+			productRefGroup = 70DC7CBF219F5BFB8AE7D255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0039E288AC7F5B67AF8E8781 /* PinkDessertFavorites */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6437A4E0947E52B3BDE5BB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FCDC82AFB65244A8B9E065 /* Main.storyboard in Resources */,
+				4C23351CA88C50539CC86CD8 /* LaunchScreen.storyboard in Resources */,
+				6ADC40C20E69551290A2587A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC213CF8E3025712A5DFE9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BF523C910C5F62A9C5436D /* AppDelegate.swift in Sources */,
+				B22FEA55210D58C7837E11C0 /* SceneDelegate.swift in Sources */,
+				32165BD30BCA5781B5DFE2EE /* ViewController.swift in Sources */,
+				D2F6831AE316568CA936CB32 /* FavoriteCell.swift in Sources */,
+				7D5921B6019B569E9B71C8E6 /* FavoriteItem.swift in Sources */,
+				6581B8520B6A5E92B9CD5C8B /* FavoriteLibrary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AB9CBBF687F586FA32D7B80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0756968C675F528C827A96D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6722E39B8935C29B3CF2CAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B2A1C750EA955629E4740DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F790E872ED0589ABECFDFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PinkDessertFavorites/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saya.PinkDessertFavorites;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E53AADD73445D268E6685C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62942755C4C25ED7BAED61FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6331AE76073B5B47BA7650A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PinkDessertFavorites/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saya.PinkDessertFavorites;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83069315831553B8959E9EE3 /* Build configuration list for PBXProject "PinkDessertFavorites" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62942755C4C25ED7BAED61FA /* Debug */,
+				4E53AADD73445D268E6685C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC42B60081055DFBA2DB763 /* Build configuration list for PBXNativeTarget "PinkDessertFavorites" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F790E872ED0589ABECFDFB7 /* Debug */,
+				6331AE76073B5B47BA7650A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1738D2920215B21B2CBCD61 /* Project object */;
+}
